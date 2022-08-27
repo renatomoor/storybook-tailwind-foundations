@@ -1,1 +1,1 @@
-{"v":3,"stories":{"foundations-colors--colors":{"id":"foundations-colors--colors","title":"Foundations/Colors","name":"Colors","importPath":"./src/stories/Colors.stories.js"}}}
+{"v":3,"stories":{"foundations-colors--colors":{"id":"foundations-colors--colors","title":"Foundations/Colors","name":"Colors","importPath":"./src/stories/Colors.stories.js"},"foundations-spaces--spaces":{"id":"foundations-spaces--spaces","title":"Foundations/Spaces","name":"Spaces","importPath":"./src/stories/Spaces.stories.js"}}}
