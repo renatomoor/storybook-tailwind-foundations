@@ -9,35 +9,68 @@ const props = defineProps({
 
 
 <template>
-  <h2 class="title">
-    Spaces
-  </h2>
   <div class="spaces">
-    <div v-for="(space, key) in spaces">
+    <div class="spaces__wrapper" v-for="(space, key) in spaces">
+      <div class="spaces__content">
+        <p class="key">{{ key }}</p>
+        <p class="space"> {{ space }} </p>
+      </div>
       <div class="spaces__space" :style="`width: ${space}`"/>
-        <div>{{ key }}</div>
     </div>
   </div>
 </template>
 
 
 <style scoped>
+@import "../assets/main.css";
+
 .title {
   text-align: center;
 }
 
+p {
+  line-height: 1rem;
+}
+
+.key {
+  font-size: 1.1rem;
+}
+
+.space {
+  font-weight: lighter;
+}
+
 .spaces {
-  padding: 5rem;
-  margin-left: auto;
-  margin-right: auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.spaces__wrapper {
+  border: #dcdcdc solid 1px;
+  display: flex;
+  gap: 2rem;
+  border-radius: 0.75rem;
+  padding: 0.5rem;
+}
+
+.spaces__content {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 5rem;
+}
+
+.space {
+  font-weight: 100;
+  color: #64748BFF;
 }
 
 .spaces__space {
-  border-radius: 0.75rem;
-  background-color: gray;
-  margin-bottom: 1rem;
+  align-self: center;
   height: 5rem;
+  background-color: #818cf81a;
+  background-size: 7.07px 7.07px;
+  background-image: linear-gradient(135deg,#6366f180 10%,transparent 0,transparent 50%,#6366f180 0,#6366f180 60%,transparent 0,transparent);
 }
 </style>
