@@ -1,5 +1,9 @@
 # Getting Started
 
+## Links
+- [Documentation](https://renatomoor.github.io/storybook-tailwind-foundations/)
+- [Example](https://renatomoor.github.io/storybook-tailwind-foundations/example/?path=/story/foundations-colors--colors)
+
 ## Requirements
 
 - Vue 3.0+
