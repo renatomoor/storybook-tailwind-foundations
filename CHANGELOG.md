@@ -1,5 +1,17 @@
 
 
+### [0.1.3](https://github.com/renatomoor/storybook-tailwind-foundations/compare/0.1.2...0.1.3) (2022-08-27)
+
+
+### :open_file_folder: Documentation
+
+* add Dario Regazzoni to team page ([ce80596](https://github.com/renatomoor/storybook-tailwind-foundations/commit/ce805966823e8af5221a443fe37785f40b12327f))
+
+
+### :art: Style
+
+* adopt tailwind doc style for colors ([7fe68bc](https://github.com/renatomoor/storybook-tailwind-foundations/commit/7fe68bc00ff48f6be4bcead05fc22aba72af0e41))
+
 ### [0.1.2](https://github.com/renatomoor/storybook-tailwind-foundations/compare/0.1.1...0.1.2) (2022-08-27)
 
 
