@@ -58,7 +58,6 @@ function hexToRgb(hex) {
 h2 {
   font-size: 1.5rem;
   font-weight: bold;
-  font-family: sans-serif;
   margin-bottom: 2rem;
   text-transform: capitalize;
   color: #52525b;
@@ -67,11 +66,11 @@ h2 {
 }
 
 .color-section {
-  padding: 2.5rem;
+  padding: 1rem;
   border-radius: .75rem;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='%23f1f5f9'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
   box-sizing: border-box;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .colors-container {
@@ -80,13 +79,14 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.5rem;
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 .color-description {
   display: flex;
   margin-top: 1rem;
+  gap: 1rem;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 0.5rem;
@@ -95,7 +95,9 @@ h2 {
 }
 
 .color {
-  padding: 4rem;
-  border-radius: 10px;
+  width: 100%;
+  border: rgba(190, 190, 190, 0.3) solid 0.1rem;
+  border-radius: .25rem;
+  height: 2.5rem;
 }
 </style>

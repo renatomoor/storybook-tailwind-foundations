@@ -40,7 +40,6 @@ const getRootColors = () => {
 
 <style>
 .colors-padding {
-  max-width: 850px;
   margin-left: auto;
   margin-right: auto;
 }
