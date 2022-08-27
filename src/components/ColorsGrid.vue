@@ -8,6 +8,10 @@ const props = defineProps({
   title: {
     type: String,
     default: 'Root'
+  },
+  useDefaultBackgroundColor: {
+    type: Boolean,
+    default: false
   }
 })
 
@@ -18,6 +22,11 @@ const getColorsSectionColor = () => {
 }
 
 function hexToRgb(hex) {
+
+  if (props.useDefaultBackgroundColor) {
+    return '210 210 210'
+  }
+
   let result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
   const rgb = result ? {
     r: parseInt(result[1], 16),

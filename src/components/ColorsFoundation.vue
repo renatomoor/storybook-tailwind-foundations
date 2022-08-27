@@ -12,6 +12,17 @@ const isObject = (obj) => {
   return obj && typeof obj === 'object'
 }
 
+const getRootColors = () => {
+  let rootColors = {}
+  for (let key in props.colors) {
+    if (!isObject(props.colors[key])) {
+      rootColors[key] = props.colors[key]
+    }
+  }
+  console.log(rootColors)
+  return rootColors
+}
+
 </script>
 
 
@@ -22,6 +33,7 @@ const isObject = (obj) => {
         <ColorsGrid :colors="color" :title="key" />
       </div>
     </div>
+    <ColorsGrid :colors="getRootColors()" title="Root Colors" :use-default-background-color="true" />
   </div>
 </template>
 
