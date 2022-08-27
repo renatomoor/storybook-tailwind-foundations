@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress';
 const pjson = require('../../package.json');
 
 export default defineConfig({
-  base: '/cariboo-styleguide/docs/',
+  base: '/storybook-tailwind-foundations/',
 
   themeConfig: {
     title: 'Tailwind Foundations',
