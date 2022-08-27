@@ -10,7 +10,7 @@ hero:
           link: /getting-started
         - theme: alt
           text: Example 
-          link: /example/
+          link: https://renatomoor.github.io/storybook-tailwind-foundations/example/
 
 features:
     - icon: 🎨
