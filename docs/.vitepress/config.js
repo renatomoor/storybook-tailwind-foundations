@@ -6,9 +6,9 @@ export default defineConfig({
   base: '/storybook-tailwind-foundations/',
 
   themeConfig: {
-    title: 'Tailwind Foundations',
-    siteTitle: 'Tailwind Foundations',
-    description: 'Cariboo Styleguide developer documentation',
+    title: 'SB Tailwind Foundations',
+    siteTitle: 'SB Tailwind Foundations',
+    description: 'Tailwind Foundations storybook documentation',
 
     nav: [
       {
