@@ -27,7 +27,7 @@ const getRootColors = () => {
 
 
 <template>
-  <div class="colors-padding">
+  <div class="colors-container">
     <div v-for="(color, key) in colors">
       <div v-if="isObject(color)">
         <ColorsGrid :colors="color" :title="key" />
@@ -38,9 +38,10 @@ const getRootColors = () => {
 </template>
 
 
-<style>
-.colors-padding {
-  margin-left: auto;
-  margin-right: auto;
+<style scoped>
+@media only screen and (min-width: 1024px) {
+  .colors-container {
+    max-width: 1000px;
+  }
 }
 </style>
