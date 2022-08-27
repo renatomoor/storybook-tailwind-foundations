@@ -10,6 +10,14 @@ const members = [
       { icon: 'github', link: 'https://github.com/renatomoor' },
     ]
   },
+  {
+    avatar: 'https://avatars.githubusercontent.com/u/48969740?v=4',
+    name: 'Dario Regazzoni',
+    title: 'Frontend Developer',
+    links: [
+      { icon: 'github', link: 'https://github.com/DarioRega' },
+    ]
+  },
 ]
 </script>
 
