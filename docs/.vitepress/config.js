@@ -15,11 +15,11 @@ export default defineConfig({
         text: 'Version ' + pjson.version,
         link: '/changelog',
       },
-      { text: 'Storybook', link: 'https://cariboo.pages.spcs.one/cariboo-styleguide' },
+      { text: 'Example', link: 'https://renatomoor.github.io/storybook-tailwind-foundations/example/' },
     ],
     sidebar: [
       {
-        text: 'Introduction',
+        text: 'Doc',
         collapsible: true,
         items: [{ text: 'Getting Started', link: '/getting-started' }],
       },
@@ -27,7 +27,13 @@ export default defineConfig({
         text: 'About',
         collapsible: true,
         collapsed: true,
-        items: [{ text: 'Team', link: '/team' }],
+        items: [
+          {
+            text: 'Changelog ' + pjson.version,
+            link: '/changelog',
+          },
+          { text: 'Team', link: '/team' },
+        ],
       },
     ],
     footer: {
@@ -35,13 +41,13 @@ export default defineConfig({
       copyright: 'Copyright © 2022-present',
     },
     editLink: {
-      pattern: 'https://gitlab.spcs.one/cariboo/cariboo-styleguide/-/tree/main/docs/:path',
-      text: 'Edit this page on Gitlab',
+      pattern: 'https://github.com/renatomoor/storybook-tailwind-foundations/tree/main/docs/:path',
+      text: 'Edit this page on Github',
     },
     socialLinks: [
       {
         icon: 'github',
-        link: 'https://gitlab.spcs.one/cariboo/cariboo-styleguide',
+        link: 'https://github.com/renatomoor/storybook-tailwind-foundations/tree/main',
       },
     ],
   },

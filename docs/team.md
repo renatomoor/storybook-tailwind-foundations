@@ -13,8 +13,6 @@ const members = [
 ]
 </script>
 
-# Cariboo Frontend team
-
-Say hello to our awesome team.
+# Team 
 
 <VPTeamMembers size="medium" :members="members" />
