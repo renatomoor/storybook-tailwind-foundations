@@ -10,7 +10,8 @@ hero:
           link: /getting-started
         - theme: alt
           text: Example 
-          link: /# 
+          link: /example/
+
 features:
     - icon: 🎨
       title: Colors 
