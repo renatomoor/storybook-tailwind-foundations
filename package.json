@@ -76,7 +76,8 @@
     "displayName": "Tailwind Foundations",
     "supportedFrameworks": [
       "vue"
-    ]
+    ],
+    "icon": "https://pbs.twimg.com/profile_images/1468993891584073729/a_op8KnL_400x400.jpg"
   },
   "publishConfig": {
     "access": "public"
