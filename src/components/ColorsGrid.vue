@@ -18,6 +18,7 @@ const props = defineProps({
 
 <template>
   <div class="color-section">
+    <h3>{{ title}}</h3>
     <div class="colors-container">
       <div v-for="(color, key) in colors">
         <div class="colors-container__wrapper">

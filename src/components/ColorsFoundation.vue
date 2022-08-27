@@ -26,7 +26,7 @@ const getRootColors = () => {
 
 
 <template>
-  <div class="colors-padding">
+  <div class="colors-container">
     <div v-for="(color, key) in colors">
       <div v-if="isObject(color)">
         <ColorsGrid :colors="color" :title="key" />
