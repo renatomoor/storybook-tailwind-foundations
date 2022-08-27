@@ -1,3 +1,10 @@
+const { mergeConfig } = require('vite');
+const path = require('path');
+
+function resolve(dir) {
+  return path.join(__dirname, dir);
+}
+
 const resolveConfig = require('tailwindcss/resolveConfig');
 const tailwindConfig = require('../tailwind.config.js')
 const fullConfig = resolveConfig(tailwindConfig)
@@ -18,6 +25,16 @@ module.exports = {
   },
   "features": {
     "storyStoreV7": true
+  },
+  async viteFinal(config, { configType }) {
+    return mergeConfig(config, {
+      base: '/storybook-tailwind-foundations/example/',
+      resolve: {
+        alias: {
+          '@': resolve('../src'),
+        },
+      },
+    });
   },
   env: (config) => ({
     ...config,
