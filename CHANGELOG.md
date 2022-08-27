@@ -1,5 +1,12 @@
 
 
+### [0.1.2](https://github.com/renatomoor/storybook-tailwind-foundations/compare/0.1.1...0.1.2) (2022-08-27)
+
+
+### :open_file_folder: Documentation
+
+* fix typo install command ([a8985fa](https://github.com/renatomoor/storybook-tailwind-foundations/commit/a8985faee2e0c5fbbf4a9a071300d771316b6853))
+
 ### [0.1.1](https://github.com/renatomoor/storybook-tailwind-foundations/compare/0.1.0...0.1.1) (2022-08-27)
 
 
