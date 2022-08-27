@@ -15,5 +15,8 @@ hero:
 features:
     - icon: 🎨
       title: Colors 
-      details: Show yours tailwind colors in storybook 
+      details: Show yours tailwind colors in storybook
+    - icon: ▍▋ 
+      title: Spaces
+      details: Show yours tailwind spaces in storybook
 ---
