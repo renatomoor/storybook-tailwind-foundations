@@ -38,3 +38,7 @@ If you make any change to the tailwind config, you need to restart storybook to 
 :::
 
 Now you can start storybook and the `Foundations` section should appear in the sidebar.
+
+## Preview
+
+![Example](./images/storybook-tailwind-foundations.gif)

@@ -3,6 +3,8 @@
 ## Links
 - [Documentation](https://renatomoor.github.io/storybook-tailwind-foundations/)
 - [Example](https://renatomoor.github.io/storybook-tailwind-foundations/example/?path=/story/foundations-colors--colors)
+  
+![Example](./docs/images/storybook-tailwind-foundations.gif)
 
 ## Requirements
 
