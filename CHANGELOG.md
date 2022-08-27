@@ -1,5 +1,18 @@
 
 
+### [0.2.1](https://github.com/renatomoor/storybook-tailwind-foundations/compare/0.2.0...0.2.1) (2022-08-27)
+
+
+### :beetle: Bug Fixes
+
+* colors layout ([03215ba](https://github.com/renatomoor/storybook-tailwind-foundations/commit/03215ba0ae9134d5d4b48cb1f5dc6b33e9c73f11))
+
+
+### :open_file_folder: Documentation
+
+* add preview gif ([8045c59](https://github.com/renatomoor/storybook-tailwind-foundations/commit/8045c59ca86d1c3a02bc10a3669bea80fb752102))
+* add spaces to home page features ([b11eea8](https://github.com/renatomoor/storybook-tailwind-foundations/commit/b11eea8a062ea726ff2fbc8db2b9e01b5e80ac62))
+
 ## [0.2.0](https://github.com/renatomoor/storybook-tailwind-foundations/compare/0.1.3...0.2.0) (2022-08-27)
 
 

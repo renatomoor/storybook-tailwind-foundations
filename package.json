@@ -1,7 +1,7 @@
 {
   "name": "storybook-tailwind-foundations",
   "description": "Storybook tailwind foundations from tailwind.config.js as stories",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "scripts": {
     "dev": "npm run storybook",
     "build": "run-p type-check build-only",
