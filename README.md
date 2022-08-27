@@ -14,7 +14,7 @@
 ## Install package
 
 ```sh
-npm install storybook-tailwind-fundations
+npm install storybook-tailwind-foundations
 ```
 
 ## Adapt `./storybook/main.js`
