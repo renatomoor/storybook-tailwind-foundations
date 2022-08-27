@@ -1,5 +1,6 @@
 {
   "name": "storybook-tailwind-foundations",
+  "description": "Storybook tailwind foundations from tailwind.config.js as stories",
   "version": "0.1.0",
   "scripts": {
     "dev": "npm run storybook",
@@ -55,5 +56,33 @@
     "vitepress": "^1.0.0-alpha.12",
     "vue-loader": "^16.8.3",
     "vue-tsc": "^0.39.5"
+  },
+  "keywords": [
+    "storybook-addons",
+    "style",
+    "tailwind",
+    "css",
+    "appearance",
+    "layout",
+    "Appearance",
+    "storybook"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/renatomoor/storybook-tailwind-foundations"
+  },
+  "license": "MIT",
+  "storybook": {
+    "displayName": "Tailwind Foundations",
+    "supportedFrameworks": [
+      "vue"
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": {
+    "name": "Renato Moor",
+    "email": "renatomoor1@gmail.com"
   }
 }
