@@ -19,7 +19,6 @@ const getRootColors = () => {
       rootColors[key] = props.colors[key]
     }
   }
-  console.log(rootColors)
   return rootColors
 }
 
@@ -27,7 +26,7 @@ const getRootColors = () => {
 
 
 <template>
-  <div class="colors-container">
+  <div class="colors-padding">
     <div v-for="(color, key) in colors">
       <div v-if="isObject(color)">
         <ColorsGrid :colors="color" :title="key" />
