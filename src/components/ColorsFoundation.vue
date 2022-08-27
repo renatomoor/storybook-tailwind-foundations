@@ -38,8 +38,9 @@ const getRootColors = () => {
 
 
 <style scoped>
-.colors-padding {
-  margin-left: auto;
-  margin-right: auto;
+@media only screen and (min-width: 1024px) {
+  .colors-container {
+    max-width: 1000px;
+  }
 }
 </style>
