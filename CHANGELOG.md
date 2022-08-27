@@ -1,5 +1,17 @@
 
 
+## [0.2.0](https://github.com/renatomoor/storybook-tailwind-foundations/compare/0.1.3...0.2.0) (2022-08-27)
+
+
+### :sparkles: Features
+
+* add spaces ([4bd99e4](https://github.com/renatomoor/storybook-tailwind-foundations/commit/4bd99e4017e0e4b568cecb2e722a089953c17ee6))
+
+
+### :art: Style
+
+* improve spaces style ([44bc195](https://github.com/renatomoor/storybook-tailwind-foundations/commit/44bc195559a16313c4744e863c45947e2154bca8))
+
 ### [0.1.3](https://github.com/renatomoor/storybook-tailwind-foundations/compare/0.1.2...0.1.3) (2022-08-27)
 
 
