@@ -1,5 +1,15 @@
 
 
+### [0.1.1](https://github.com/renatomoor/storybook-tailwind-foundations/compare/0.1.0...0.1.1) (2022-08-27)
+
+
+### :open_file_folder: Documentation
+
+* add gitlab pages example link ([6d6971d](https://github.com/renatomoor/storybook-tailwind-foundations/commit/6d6971d4a2b44f9f8e9a0c0856e1b86a3952ab6f))
+* add links to readme ([db0b254](https://github.com/renatomoor/storybook-tailwind-foundations/commit/db0b254a50652beb97b816bc27f226008f6d3aa6))
+* fix docs page description ([d03eaf6](https://github.com/renatomoor/storybook-tailwind-foundations/commit/d03eaf636ce66e4218784cd751de2088a5d166ee))
+* fix github links ([2e644e7](https://github.com/renatomoor/storybook-tailwind-foundations/commit/2e644e770bceb5aead90d7544c97c970320bd006))
+
 ## 0.1.0 (2022-08-27)
 
 
