@@ -19,7 +19,6 @@ const getRootColors = () => {
       rootColors[key] = props.colors[key]
     }
   }
-  console.log(rootColors)
   return rootColors
 }
 
@@ -38,7 +37,7 @@ const getRootColors = () => {
 </template>
 
 
-<style>
+<style scoped>
 .colors-padding {
   margin-left: auto;
   margin-right: auto;

@@ -7,7 +7,7 @@ module.exports = {
   ],
   theme: {
     extend: {
-
+      'test': 'rgba(1, 1, 1, 0.1)',
     },
   },
   plugins: [],
