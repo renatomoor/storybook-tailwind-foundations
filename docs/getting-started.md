@@ -15,9 +15,9 @@ npm install storybook-tailwind-fundations
 
 ## Adapt `./storybook/main.js`
 ```js
-const resolveConfig = require('tailwindcss/resolveConfig');
-const tailwindConfig = require('../tailwind.config.js') // replace with your own config file location
-const fullConfig = resolveConfig(tailwindConfig)
+const sbTwConfigFoundations = require("../src/bin/config");
+// initialize process
+sbTwConfigFoundations.initialize()
 
 module.exports = {
    // ...
@@ -26,7 +26,8 @@ module.exports = {
     '../node_modules/storybook-tailwind-foundations/**/*.stories.js'],
   env: (config) => ({
       ...config,
-      STORYBOOK_TAILWIND: fullConfig,
+      // access the config object
+      STORYBOOK_TAILWIND: sbTwConfigFoundations.getConfig(),
    }),
 }
 ```
