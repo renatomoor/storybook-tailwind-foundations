@@ -15,5 +15,5 @@ const Template = (args) => ({
 
 export const Spaces = Template.bind({});
 Spaces.args = {
-  spaces: import.meta.env.STORYBOOK_TAILWIND.theme.space,
+  spaces: import.meta.env.STORYBOOK_TAILWIND.spacing,
 }

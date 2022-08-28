@@ -5,9 +5,8 @@ function resolve(dir) {
   return path.join(__dirname, dir);
 }
 
-const resolveConfig = require('tailwindcss/resolveConfig');
-const tailwindConfig = require('../tailwind.config.js')
-const fullConfig = resolveConfig(tailwindConfig)
+const sbTwConfigFoundations = require("../src/bin/config");
+sbTwConfigFoundations.initialize()
 
 module.exports = {
   "stories": [
@@ -38,7 +37,8 @@ module.exports = {
   },
   env: (config) => ({
     ...config,
-    STORYBOOK_TAILWIND: fullConfig,
+    STORYBOOK_TAILWIND: sbTwConfigFoundations.getConfig(),
     STORYBOOK_SHOW_TAILWIND_COLORS: false,
   }),
 }
+

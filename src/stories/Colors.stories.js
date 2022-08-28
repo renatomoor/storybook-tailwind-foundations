@@ -15,5 +15,5 @@ const Template = (args) => ({
 
 export const Colors = Template.bind({});
 Colors.args = {
-  colors: import.meta.env.STORYBOOK_TAILWIND.theme.colors,
+  colors: import.meta.env.STORYBOOK_TAILWIND.colors,
 }
