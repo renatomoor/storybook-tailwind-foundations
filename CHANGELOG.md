@@ -1,5 +1,7 @@
 
 
+### [1.1.1](https://github.com/renatomoor/storybook-tailwind-foundations/compare/1.1.0...1.1.1) (2022-08-30)
+
 ## [1.1.0](https://github.com/renatomoor/storybook-tailwind-foundations/compare/1.0.1...1.1.0) (2022-08-30)
 
 
