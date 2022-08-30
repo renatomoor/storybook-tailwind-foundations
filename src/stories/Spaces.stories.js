@@ -1,5 +1,5 @@
 import SpacesFoundation from '../components/SpacesFoundation.vue';
-import { getTheme } from "../bin/getTheme";
+import { getTheme } from "storybook-tailwind-foundations";
 
 export default {
   title: 'Foundations/Spaces',
