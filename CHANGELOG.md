@@ -1,5 +1,12 @@
 
 
+## [1.1.0](https://github.com/renatomoor/storybook-tailwind-foundations/compare/1.0.1...1.1.0) (2022-08-30)
+
+
+### :sparkles: Features
+
+* add tailwind screens support ([984e9d8](https://github.com/renatomoor/storybook-tailwind-foundations/commit/984e9d8a499bfbedb20239c391909a8a26da7f51))
+
 ### [1.0.1](https://github.com/renatomoor/storybook-tailwind-foundations/compare/1.0.0...1.0.1) (2022-08-30)
 
 
