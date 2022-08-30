@@ -5,7 +5,6 @@
  - Vue 3.0+
  - Tailwind CSS
  - Storybook
- - Storybook builder vite 
 
 ## Install package 
 
@@ -15,20 +14,15 @@ npm install storybook-tailwind-fundations
 
 ## Adapt `./storybook/main.js`
 ```js
-const sbTwConfigFoundations = require("../src/bin/config");
-// initialize process
-sbTwConfigFoundations.initialize()
+require('storybook-tailwind-foundations/initialize.js')
+  .default(resolve('../tailwind.config.js')); // or your own config file
 
 module.exports = {
    // ...
   stories: [
     // ... 
-    '../node_modules/storybook-tailwind-foundations/**/*.stories.js'],
-  env: (config) => ({
-      ...config,
-      // access the config object
-      STORYBOOK_TAILWIND: sbTwConfigFoundations.getConfig(),
-   }),
+    '../node_modules/storybook-tailwind-foundations/**/*.stories.js'
+  ],
 }
 ```
 
