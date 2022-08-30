@@ -1,5 +1,22 @@
 
 
+## [1.0.0](https://github.com/renatomoor/storybook-tailwind-foundations/compare/0.2.1...1.0.0) (2022-08-30)
+
+
+### ⚠ BREAKING CHANGES
+
+* remove storybook env variables for theme
+
+### :open_file_folder: Documentation
+
+* adapt getting started ([f4389a2](https://github.com/renatomoor/storybook-tailwind-foundations/commit/f4389a2a1f5c8db444f4b794e04e63d985727db8))
+
+
+### :sparkles: Features
+
+* generate theme file from config and put in the node_modules cache ([3d73d08](https://github.com/renatomoor/storybook-tailwind-foundations/commit/3d73d082cdc09d1296b1512b16f76abbce5584f3))
+* remove storybook env variables for theme ([34053a5](https://github.com/renatomoor/storybook-tailwind-foundations/commit/34053a5ec97318c74d94e532ec525dd0b6a1361b))
+
 ### [0.2.1](https://github.com/renatomoor/storybook-tailwind-foundations/compare/0.2.0...0.2.1) (2022-08-27)
 
 
