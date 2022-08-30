@@ -16,17 +16,21 @@
     "docs:serve": "vitepress serve docs",
     "release": "release-it"
   },
+  "main": "./src/bin/index.js",
   "files": [
     "src"
   ],
+  "exports": {
+    ".": "./src/bin/index.js",
+    "./initialize.js": "./src/bin/initialize.js",
+    "./theme.json": "./theme.json"
+  },
   "peerDependencies": {
-    "vue": "^3.2.25",
+    "@storybook/builder-vite": "^0.2.2",
     "vite": "^3.0.4",
-    "@storybook/builder-vite": "^0.2.2"
+    "vue": "^3.2.25"
   },
   "devDependencies": {
-    "vue": "^3.2.37",
-    "release-it": "^15.4.0",
     "@babel/core": "^7.18.13",
     "@release-it/conventional-changelog": "^5.1.0",
     "@rushstack/eslint-patch": "^1.1.4",
@@ -49,12 +53,18 @@
     "eslint-plugin-vue": "^9.3.0",
     "find-cache-dir": "^3.3.2",
     "npm-run-all": "^4.1.5",
+    "commondir": "^1.0.1",
+    "make-dir": "^3.0.2",
+    "pkg-dir": "^4.1.0",
     "postcss": "^8.4.16",
     "prettier": "^2.7.1",
+    "release-it": "^15.4.0",
+    "storybook-tailwind-foundations": "file:storybook-tailwind-foundations-0.2.1.tgz",
     "tailwindcss": "^3.1.8",
     "typescript": "~4.7.4",
     "vite": "^3.0.4",
     "vitepress": "^1.0.0-alpha.12",
+    "vue": "^3.2.37",
     "vue-loader": "^16.8.3",
     "vue-tsc": "^0.39.5"
   },

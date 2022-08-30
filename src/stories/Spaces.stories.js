@@ -1,4 +1,5 @@
 import SpacesFoundation from '../components/SpacesFoundation.vue';
+import { getTheme } from "../bin/getTheme";
 
 export default {
   title: 'Foundations/Spaces',
@@ -15,5 +16,5 @@ const Template = (args) => ({
 
 export const Spaces = Template.bind({});
 Spaces.args = {
-  spaces: import.meta.env.STORYBOOK_TAILWIND.spacing,
+  spaces: getTheme('spacing'),
 }
