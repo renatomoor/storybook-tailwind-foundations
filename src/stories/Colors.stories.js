@@ -1,4 +1,5 @@
 import ColorsFoundation from '../components/ColorsFoundation.vue';
+import { getTheme } from "storybook-tailwind-foundations";
 
 export default {
   title: 'Foundations/Colors',
@@ -15,5 +16,5 @@ const Template = (args) => ({
 
 export const Colors = Template.bind({});
 Colors.args = {
-  colors: import.meta.env.STORYBOOK_TAILWIND.colors,
+  colors: getTheme('colors'),
 }

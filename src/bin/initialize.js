@@ -1,16 +1,14 @@
-const prettier = require("prettier");
-const findCacheDir = require("find-cache-dir");
+const findNodeModulesDir = require('./findNodeModulesDir');
 const resolveConfig = require("tailwindcss/resolveConfig");
 const fs = require("fs");
 const path = require("path");
-
-const pckJson = require("../../package.json");
 
 /**
  * Name and extension of the file generated in the cache
  * @type {string}
  */
 const GENERATED_FILE_NAME = "theme.json"
+const PACKAGE_NAME = "storybook-tailwind-foundations";
 
 /**
  * Currently supported property keys
@@ -24,8 +22,8 @@ const supportedPropertyKeys = ['screens', 'colors', 'spacing']
  * Get the path of the cache directory in node_modules
  * @returns {string}
  */
-function getCacheDir() {
-  return `${findCacheDir({name: pckJson.name, create: true})}/`;
+function getPackageDir() {
+  return `${findNodeModulesDir()}/${PACKAGE_NAME}`;
 }
 
 /**
@@ -39,18 +37,21 @@ function generateConfig(tailwindConfigPath, additionalPropertyKeys = []) {
   const fullConfig = resolveConfig(tailwindConfig)
 
   let generatedConfig = {};
+
   // merge arrays and push key/values in the generated config variable
   [...supportedPropertyKeys, ...additionalPropertyKeys].forEach(key => {
 	generatedConfig[key] = fullConfig.theme[key];
   })
 
   const json = JSON.stringify(generatedConfig);
+
   try {
-	fs.writeFileSync(
-		path.resolve(getCacheDir(), GENERATED_FILE_NAME),
-		prettier.format(json, {parser: 'json'}))
+		fs.writeFileSync(
+			path.resolve(getPackageDir(), GENERATED_FILE_NAME),
+			json
+		);
   } catch (err) {
-	console.error(err.message);
+		console.error(err.message);
   }
 }
 
@@ -58,43 +59,6 @@ function generateConfig(tailwindConfigPath, additionalPropertyKeys = []) {
  * Core function to generate the config file
  * @param tailwindConfigPath
  */
-module.exports.initialize = function (tailwindConfigPath = '../../tailwind.config.js') {
+module.exports.default = function (tailwindConfigPath = '../../tailwind.config.js') {
   generateConfig(tailwindConfigPath);
 }
-
-/**
- * Will return the either all the generated json
- * or the json for the given property key
- * or if an array of properties, only them
- * @param key
- * @returns {{}|*}
- */
-module.exports.getConfig = function(key = null) {
-  try {
-	const file = require(`${getCacheDir()}/${GENERATED_FILE_NAME}`);
-	if(key) {
-	  if(typeof key === "string") {
-		return file[key];
-	  } else if(typeof key === "object" && key?.length > 0) {
-		const result = {};
-		key.forEach(key => {
-		  result[key] = file[key];
-		});
-		return result;
-	  }
-	}
-	return file
-  } catch (err) {
-	throw new Error("Could not find config file.");
-  }
-}
-
-
-/**
- * Core function to generate the config file
- * @param tailwindConfigPath
- */
-module.exports.initialize = function (tailwindConfigPath = '../../tailwind.config.js') {
-  generateConfig(tailwindConfigPath);
-}
-

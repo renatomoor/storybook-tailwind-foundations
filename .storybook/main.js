@@ -4,9 +4,8 @@ const path = require('path');
 function resolve(dir) {
   return path.join(__dirname, dir);
 }
-
-const sbTwConfigFoundations = require("../src/bin/config");
-sbTwConfigFoundations.initialize()
+require("storybook-tailwind-foundations/initialize.js")
+  .default('../../tailwind.config.js');
 
 module.exports = {
   "stories": [
@@ -35,10 +34,5 @@ module.exports = {
       },
     });
   },
-  env: (config) => ({
-    ...config,
-    STORYBOOK_TAILWIND: sbTwConfigFoundations.getConfig(),
-    STORYBOOK_SHOW_TAILWIND_COLORS: false,
-  }),
 }
 
