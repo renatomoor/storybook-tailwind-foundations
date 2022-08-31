@@ -1,5 +1,12 @@
 
 
+### [1.1.2](https://github.com/renatomoor/storybook-tailwind-foundations/compare/1.1.1...1.1.2) (2022-08-31)
+
+
+### :open_file_folder: Documentation
+
+* update ./storybook/main.js documentation ([e204d88](https://github.com/renatomoor/storybook-tailwind-foundations/commit/e204d888aee5022eb6f49e6168e5b42b52afff85))
+
 ### [1.1.1](https://github.com/renatomoor/storybook-tailwind-foundations/compare/1.1.0...1.1.1) (2022-08-30)
 
 ## [1.1.0](https://github.com/renatomoor/storybook-tailwind-foundations/compare/1.0.1...1.1.0) (2022-08-30)
