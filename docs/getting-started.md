@@ -14,8 +14,10 @@ npm install storybook-tailwind-fundations
 
 ## Adapt `./storybook/main.js`
 ```js
+const path = require('path');
+const tailwindConfigPath = path.join(__dirname, '../tailwind.config.js'); // or your own config file
 require('storybook-tailwind-foundations/initialize.js')
-  .default(resolve('../tailwind.config.js')); // or your own config file
+  .default(tailwindConfigPath);
 
 module.exports = {
    // ...
